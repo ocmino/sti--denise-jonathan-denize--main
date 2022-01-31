@@ -1,10 +1,7 @@
 package se.sti.stidenisejonathandenize.domain;
 
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import se.sti.stidenisejonathandenize.domain.Student;
 
 import java.util.ArrayList;
@@ -44,6 +41,13 @@ public class StudentService {
             }
         }
         return student;
+    }
+
+
+    @PostMapping("/addnewstudent")
+    @ApiOperation(value = "Lägg till ny student")
+    public void addStudent(@RequestBody Student newStudent){
+        students.add(new Student(newStudent.getGivenName(), newStudent.getSurName()));
     }
 
 
