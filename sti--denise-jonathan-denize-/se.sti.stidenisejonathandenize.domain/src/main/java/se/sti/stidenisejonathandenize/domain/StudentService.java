@@ -58,7 +58,6 @@ public class StudentService {
     public void addCourse(@RequestBody Course newCourse){
         courses.add(new Course(newCourse.getCourseCode()));
     }
-
     @GetMapping("/getwithCourseCode")
     @ApiOperation(value = "Hämta kurs via kurskod")
     public Course getCourseByCode(@RequestParam String courseCode){
@@ -70,10 +69,6 @@ public class StudentService {
         }
         return course;
     }
-
-
-
-
 
 
 }
