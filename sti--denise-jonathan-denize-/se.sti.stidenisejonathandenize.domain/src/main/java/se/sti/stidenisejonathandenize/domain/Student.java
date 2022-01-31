@@ -15,6 +15,12 @@ public class Student {
         this.surName = surName;
     }
 
+    public Student(String givenName, String surName, String SSN) {
+        this.givenName = givenName;
+        this.surName = surName;
+        this.SSN = SSN;
+    }
+
     public String getGivenName() {
         return givenName;
     }

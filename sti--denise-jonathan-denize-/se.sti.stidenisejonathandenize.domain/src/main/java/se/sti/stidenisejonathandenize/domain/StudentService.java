@@ -13,12 +13,10 @@ import java.util.List;
 public class StudentService {
 
     private static List<Student> students = Arrays.asList(
-            new Student("Jonathan", " Lindqvist"),
-            new Student("Denize", " Scheffold"),
-            new Student("Denise", "Casperson")
+            new Student("Jonathan", "Lindqvist", "890128"),
+            new Student("Denise", "Casperson", "990229"),
+            new Student("Denize", "Scheffold", "100330")
     );
-
-
 
     @GetMapping("/getAllStudents")
     @ApiOperation(value = "Hämta alla studenter")
@@ -29,7 +27,6 @@ public class StudentService {
         }
         return studentNames;
     }
-
 
     @GetMapping("/getwithSSN")
     @ApiOperation(value = "Hämta student via SSN")
@@ -43,12 +40,13 @@ public class StudentService {
         return student;
     }
 
-
     @PostMapping("/addnewstudent")
     @ApiOperation(value = "Lägg till ny student")
     public void addStudent(@RequestBody Student newStudent){
         students.add(new Student(newStudent.getGivenName(), newStudent.getSurName()));
     }
+
+
 
 
 }
