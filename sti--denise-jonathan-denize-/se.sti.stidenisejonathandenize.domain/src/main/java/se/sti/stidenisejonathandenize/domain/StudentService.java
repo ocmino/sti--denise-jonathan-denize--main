@@ -18,6 +18,13 @@ public class StudentService {
             new Student("Denize", "Scheffold", "100330")
     );
 
+
+    private static List<Course> courses = Arrays.asList(
+            new Course("ABC-123"),
+            new Course("DEF-456"),
+            new Course("GHI-789")
+    );
+
     @GetMapping("/getAllStudents")
     @ApiOperation(value = "Hämta alla studenter")
     public List<String> getAllStudents(){
@@ -46,7 +53,22 @@ public class StudentService {
         students.add(new Student(newStudent.getGivenName(), newStudent.getSurName()));
     }
 
-
+    @PostMapping("/addcourse")
+    @ApiOperation(value = "Lägg till kurs")
+    public void addCourse(@RequestBody Course newCourse){
+        courses.add(new Course(newCourse.getCourseCode()));
+    }
+    @GetMapping("/getwithCourseCode")
+    @ApiOperation(value = "Hämta kurs via kurskod")
+    public Course getCourseByCode(@RequestParam String courseCode){
+        Course course = null;
+        for(Course c: courses){
+            if(c.getCourseCode().equalsIgnoreCase(courseCode)){
+               course = c;
+            }
+        }
+        return course;
+    }
 
 
 }

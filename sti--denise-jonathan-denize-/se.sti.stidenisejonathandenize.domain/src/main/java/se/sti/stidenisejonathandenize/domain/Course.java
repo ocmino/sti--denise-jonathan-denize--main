@@ -6,17 +6,23 @@ public class Course {
     private Teacher teacher;
     private String courseCode;
     private int hours;
+    //private Student student;
+
 
     public Course(int yhPoints, Teacher teacher, String courseCode, int hours) {
         this.yhPoints = yhPoints;
         this.teacher = teacher;
         this.courseCode = courseCode;
         this.hours = hours;
+       // this.student = student;
     }
 
     public Course(String courseCode) {
         this.courseCode = courseCode;
+
     }
+
+
 
     public int getYhPoints() {
         return yhPoints;
@@ -50,9 +56,18 @@ public class Course {
         this.hours = hours;
     }
 
+    /*public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }*/
 
     @Override
     public String toString() {
         return "Kurskod: " + courseCode;
     }
+
+
 }
