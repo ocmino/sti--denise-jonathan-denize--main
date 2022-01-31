@@ -29,9 +29,9 @@ public class StudentConfig {
                     "Casperson",
                     "100330"
             );
-            repository.saveAll(
-                    List.of(jonathan, denise, denise)
-            );
+//            repository.saveAll(
+//                    List.of(jonathan, denise, denise)
+//            );
         };
     }
 }
