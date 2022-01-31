@@ -22,6 +22,8 @@ public class Course {
 
     }
 
+
+
     public int getYhPoints() {
         return yhPoints;
     }
