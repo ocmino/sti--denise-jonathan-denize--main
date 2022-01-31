@@ -31,12 +31,12 @@ public class StudentService {
     }
 
 
-    @GetMapping("/getwithname")
-    @ApiOperation(value = "Hämta student via namn")
-    public Student getUserByGivenName(@RequestParam String givenName){
+    @GetMapping("/getwithSSN")
+    @ApiOperation(value = "Hämta student via SSN")
+    public Student getUserBySSN(@RequestParam String ssn){
         Student student = null;
         for(Student s : students){
-            if(s.getGivenName().equalsIgnoreCase(givenName)){
+            if(s.getSSN().equalsIgnoreCase(ssn)){
                 student = s;
             }
         }
