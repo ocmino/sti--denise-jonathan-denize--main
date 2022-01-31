@@ -1,5 +1,5 @@
 package se.sti.stidenisejonathandenize.domain;
-
+//hi
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 import se.sti.stidenisejonathandenize.domain.Student;
