@@ -49,6 +49,11 @@
 
 	<modules>
 		<module>se.sti.stidenisejonathandenize.domain</module>
+		<module>sti--denise-jonathan-denize-dao</module>
+		<module>sti--denise-jonathan-denize-dao-impl</module>
+		<module>sti--denise-jonathan-denize-service</module>
+		<module>sti--denise-jonathan-denize-service-impl</module>
+		<module>sti--denise-jonathan-denize-test</module>
 	</modules>
 
 
