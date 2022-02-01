@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sti--denise-jonathan-denize-/se.sti.stidenisejonathandenize.domain/se.sti.stidenisejonathandenize.domain.iml" filepath="$PROJECT_DIR$/sti--denise-jonathan-denize-/se.sti.stidenisejonathandenize.domain/se.sti.stidenisejonathandenize.domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sti--denise-jonathan-denize-/sti--denise-jonathan-denize-.iml" filepath="$PROJECT_DIR$/sti--denise-jonathan-denize-/sti--denise-jonathan-denize-.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sti--denise-jonathan-denize--main.iml" filepath="$PROJECT_DIR$/.idea/sti--denise-jonathan-denize--main.iml" />
     </modules>
   </component>
