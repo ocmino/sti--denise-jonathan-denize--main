@@ -12,8 +12,16 @@ import javax.persistence.*;
 
 public class CoursAndStudent {
     @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+    @SequenceGenerator(
+            name = "course_sequence",
+            sequenceName = "course_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "course_sequence"
+    )
+    private int id;
 
     private int courseCode;
     private int studentId;
@@ -29,11 +37,6 @@ public class CoursAndStudent {
         this.studentId = studentId;
     }
 
-
-    public CoursAndStudent(int courseCode, int teacherId) {
-        this.courseCode = courseCode;
-        this.teacherId = teacherId;
-    }
 
     @Override
     public String toString() {

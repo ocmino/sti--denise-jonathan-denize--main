@@ -1,7 +1,5 @@
 package com.example.demo.course;
 
-import com.example.demo.student.Student;
-import com.example.demo.teacher.Teacher;
 import lombok.Getter;
 import lombok.Setter;
 
