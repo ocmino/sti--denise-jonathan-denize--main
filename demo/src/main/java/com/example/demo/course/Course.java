@@ -27,8 +27,7 @@ public class Course {
     private long courseCode;
     private int yhPoints;
     private int hours;
-    private int teacher;
-    private int student;
+
 
 
     public Course() {
@@ -43,17 +42,12 @@ public class Course {
         this.hours = hours;
     }
 
-    public Course(long courseCode, int student) {
-        this.courseCode = courseCode;
-        this.student = student;
-    }
 
-
-    public Course(long courseCode, int yhPoints, int hours, int student) {
+    public Course(long courseCode, int yhPoints, int hours) {
         this.courseCode = courseCode;
         this.yhPoints = yhPoints;
         this.hours = hours;
-        this.student = student;
+
     }
 
     @Override
