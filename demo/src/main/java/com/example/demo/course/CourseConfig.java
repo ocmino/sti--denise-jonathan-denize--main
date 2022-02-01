@@ -22,6 +22,7 @@ public class CourseConfig {
                     45
             );
 
+
             repository.saveAll(
                     List.of(databashantering, javaprogrammering, html)
             );
