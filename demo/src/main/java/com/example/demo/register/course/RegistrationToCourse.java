@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 
-public class CoursAndStudent {
+public class RegistrationToCourse {
     @Id
     @SequenceGenerator(
             name = "coursAndStudent_sequence",
@@ -26,16 +26,16 @@ public class CoursAndStudent {
     private Long teacherId;
 
 
-    public CoursAndStudent() {
+    public RegistrationToCourse() {
 
     }
 
-    public CoursAndStudent(int courseCode, int studentId) {
+    public RegistrationToCourse(int courseCode, int studentId) {
         this.courseCode = courseCode;
         this.studentId = studentId;
     }
 
-   public CoursAndStudent(int courseCode, Long teacherId) {
+   public RegistrationToCourse(int courseCode, Long teacherId) {
         this.courseCode = courseCode;
         this.teacherId = teacherId;
     }

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 
     @Repository
-    public interface CourseAndStudentRepository extends JpaRepository<CoursAndStudent, Long> {
+    public interface RegisterToCourseRepository extends JpaRepository<RegistrationToCourse, Long> {
 
     }
 
