@@ -27,7 +27,6 @@ public class Course {
     private int hours;
 
 
-
     public Course() {
     }
 
