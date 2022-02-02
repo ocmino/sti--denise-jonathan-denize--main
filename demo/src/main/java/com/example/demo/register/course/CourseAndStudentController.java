@@ -46,7 +46,6 @@ public class CourseAndStudentController {
         courseAndStudentService.updateStudentToCourse(studentId, courseCode, id);
     }
 
-
 }
 
 
