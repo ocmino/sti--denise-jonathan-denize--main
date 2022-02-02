@@ -37,7 +37,7 @@ public class CourseAndStudentController {
     public void deleteStudentToCourse(@PathVariable("studentId") Long studentId) {
         courseAndStudentService.deleteStudentToCourse(studentId);
     }
-/*
+
     @PutMapping(path = "{studentId}")
     public void updateStudentToCourse(
             @PathVariable("studentId") int studentId,
@@ -45,7 +45,7 @@ public class CourseAndStudentController {
             @RequestParam(required = false) int id) {
         courseAndStudentService.updateStudentToCourse(studentId, courseCode, id);
     }
-    */
+
 
 }
 
