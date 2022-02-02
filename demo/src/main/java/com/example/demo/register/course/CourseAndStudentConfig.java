@@ -12,7 +12,7 @@ import java.util.List;
 public class CourseAndStudentConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(CourseAndStudentRepository repository) {
+    CommandLineRunner commandLineRunner5(CourseAndStudentRepository repository) {
         return args -> {
             CoursAndStudent jonte = new CoursAndStudent(1,1);
 
