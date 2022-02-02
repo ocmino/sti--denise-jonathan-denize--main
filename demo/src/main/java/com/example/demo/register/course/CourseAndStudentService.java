@@ -1,10 +1,10 @@
 package com.example.demo.register.course;
 
-import com.example.demo.course.Course;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
+
 
 import java.util.List;
 
@@ -30,9 +30,9 @@ public class CourseAndStudentService {
 
 
     //Ska det inte vara courseAndStudentRepository.findAll();
+    @GetMapping
     public List<CoursAndStudent> getCourseAndStudent() {
-        return getCourseAndStudent();
-    }
+        return courseAndStudentRepository.findAll();}
 
 
 

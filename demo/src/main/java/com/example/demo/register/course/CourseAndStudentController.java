@@ -1,15 +1,17 @@
 package com.example.demo.register.course;
 
 
-import com.example.demo.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 
 @RestController
-@RequestMapping(path = "api/v1/student")
+@RequestMapping(path = "api/v1/coursAndStudent")
 public class CourseAndStudentController {
 
 
@@ -35,7 +37,7 @@ public class CourseAndStudentController {
     public void deleteStudentToCourse(@PathVariable("studentId") Long studentId) {
         courseAndStudentService.deleteStudentToCourse(studentId);
     }
-
+/*
     @PutMapping(path = "{studentId}")
     public void updateStudentToCourse(
             @PathVariable("studentId") int studentId,
@@ -43,6 +45,8 @@ public class CourseAndStudentController {
             @RequestParam(required = false) int id) {
         courseAndStudentService.updateStudentToCourse(studentId, courseCode, id);
     }
+    */
+
 }
 
 

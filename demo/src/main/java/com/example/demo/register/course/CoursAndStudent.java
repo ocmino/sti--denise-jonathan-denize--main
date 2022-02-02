@@ -21,8 +21,6 @@ public class CoursAndStudent {
             strategy = GenerationType.SEQUENCE,
             generator = "coursAndStudent_sequence"
     )
-    private int id;
-
     private int courseCode;
     private int studentId;
     private int teacherId;
@@ -30,12 +28,6 @@ public class CoursAndStudent {
 
     public CoursAndStudent() {
 
-    }
-
-    public CoursAndStudent(int id, int courseCode, int studentId) {
-        this.id = id;
-        this.courseCode = courseCode;
-        this.studentId = studentId;
     }
 
     public CoursAndStudent(int courseCode, int studentId) {
