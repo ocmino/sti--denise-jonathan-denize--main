@@ -2,26 +2,22 @@ package com.example.demo.register.course;
 
 import com.example.demo.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
+
 @Service
 public class CourseAndStudentService {
 
 
-        private final CourseAndStudentRepository courseAndStudentRepository;
+    private final CourseAndStudentRepository courseAndStudentRepository;
 
-        @Autowired
-        public CourseAndStudentService(CourseAndStudentRepository courseAndStudentRepository) {
-            this.courseAndStudentRepository = courseAndStudentRepository;
-        }
-/* FUNKAR EJ!
-        @GetMapping
-        public List<CoursAndStudent> getCourseAndStudent(){
-            return courseAndStudentRepository.findAll();
-        }*/
-
+    @Autowired
+    public CourseAndStudentService(CourseAndStudentRepository courseAndStudentRepository) {
+        this.courseAndStudentRepository = courseAndStudentRepository;
+    }
 
     public void addNewStudentToCourse(CoursAndStudent studentToCourse) {
     }
@@ -32,9 +28,14 @@ public class CourseAndStudentService {
     public void updateStudentToCourse(int studentId, int courseCode, int id) {
     }
 
+
+    //Ska det inte vara courseAndStudentRepository.findAll();
     public List<CoursAndStudent> getCourseAndStudent() {
         return getCourseAndStudent();
     }
+
+
+
 }
 
 

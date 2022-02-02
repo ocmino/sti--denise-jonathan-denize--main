@@ -12,17 +12,11 @@ import java.util.List;
 public class CourseAndStudentConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner5(CourseAndStudentRepository repository) {
+    CommandLineRunner commandLineRunner5(CourseAndStudentRepository courseAndStudentRepository) {
         return args -> {
-            CoursAndStudent jonte = new CoursAndStudent(1, 1);
+            CoursAndStudent jonte = new CoursAndStudent(1,1,1);
 
-            CoursAndStudent denise = new CoursAndStudent(1, 2
-            );
-
-
-            repository.saveAll(
-                    List.of(jonte, denise)
-            );
+            //courseAndStudentRepository.saveAll(List.of(jonte));
 
         };
 

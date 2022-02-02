@@ -26,8 +26,6 @@ public class CourseAndStudentController {
     }
 
 
-
-
     @PostMapping
     public void registerStudentToCourse(@RequestBody CoursAndStudent studentToCourse) {
         courseAndStudentService.addNewStudentToCourse(studentToCourse);

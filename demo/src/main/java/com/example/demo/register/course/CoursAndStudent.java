@@ -13,13 +13,13 @@ import javax.persistence.*;
 public class CoursAndStudent {
     @Id
     @SequenceGenerator(
-            name = "course_sequence",
-            sequenceName = "course_sequence",
+            name = "coursAndStudent_sequence",
+            sequenceName = "coursAndStudent_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "course_sequence"
+            generator = "coursAndStudent_sequence"
     )
     private int id;
 
@@ -32,16 +32,24 @@ public class CoursAndStudent {
 
     }
 
+    public CoursAndStudent(int id, int courseCode, int studentId) {
+        this.id = id;
+        this.courseCode = courseCode;
+        this.studentId = studentId;
+    }
+
     public CoursAndStudent(int courseCode, int studentId) {
         this.courseCode = courseCode;
         this.studentId = studentId;
     }
 
-
+   /* public CoursAndStudent(int courseCode, int teacherId) {
+        this.courseCode = courseCode;
+        this.teacherId = teacherId;
+    }*/
     @Override
     public String toString() {
-        return "CoursAndStudent{" +
-                "id=" + id +
+        return
                 ", courseCode=" + courseCode +
                 ", studentId=" + studentId +
                 ", teacherId=" + teacherId +
