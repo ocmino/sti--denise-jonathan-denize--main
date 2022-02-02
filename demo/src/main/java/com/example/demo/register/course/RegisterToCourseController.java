@@ -11,30 +11,30 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/coursAndStudent")
-public class CourseAndStudentController {
+public class RegisterToCourseController {
 
 
-    private final CourseAndStudentService courseAndStudentService;
+    private final RegisterToCourseService registerToCourseService;
 
     @Autowired
-    public CourseAndStudentController(CourseAndStudentService courseAndStudentService) {
-        this.courseAndStudentService = courseAndStudentService;
+    public RegisterToCourseController(RegisterToCourseService registerToCourseService) {
+        this.registerToCourseService = registerToCourseService;
     }
 
     @GetMapping
-    public List<CoursAndStudent> getCourseAndStudent(){
-        return courseAndStudentService.getCourseAndStudent();
+    public List<RegistrationToCourse> getCourseAndStudent(){
+        return registerToCourseService.getCourseAndStudent();
     }
 
 
     @PostMapping
-    public void registerStudentToCourse(@RequestBody CoursAndStudent studentToCourse) {
-        courseAndStudentService.addNewStudentToCourse(studentToCourse);
+    public void registerStudentToCourse(@RequestBody RegistrationToCourse studentToCourse) {
+        registerToCourseService.addNewStudentToCourse(studentToCourse);
     }
 
     @DeleteMapping(path = "{studentId}")
     public void deleteStudentToCourse(@PathVariable("studentId") Long studentId) {
-        courseAndStudentService.deleteStudentToCourse(studentId);
+        registerToCourseService.deleteStudentToCourse(studentId);
     }
 
     @PutMapping(path = "{studentId}")
@@ -42,7 +42,7 @@ public class CourseAndStudentController {
             @PathVariable("studentId") int studentId,
             @RequestParam(required = false) int courseCode,
             @RequestParam(required = false) int id) {
-        courseAndStudentService.updateStudentToCourse(studentId, courseCode, id);
+        registerToCourseService.updateStudentToCourse(studentId, courseCode, id);
     }
 
 }
