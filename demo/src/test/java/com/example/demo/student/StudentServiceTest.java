@@ -27,7 +27,7 @@ class StudentServiceTest {
     }
 
     @Test
-    void deleteStudentTest() {
+    void shouldThrowIllegalStateException() {
         // given
         Student student = new Student(
                 "Jonathan",
