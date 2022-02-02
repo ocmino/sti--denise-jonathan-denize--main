@@ -1,6 +1,5 @@
 package com.example.demo.course;
 
-import com.example.demo.teacher.Teacher;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,6 +26,8 @@ public class Course {
     private int yhPoints;
     private int hours;
 
+
+
     public Course() {
     }
 
@@ -37,6 +38,14 @@ public class Course {
     public Course(int yhPoints, int hours) {
         this.yhPoints = yhPoints;
         this.hours = hours;
+    }
+
+
+    public Course(long courseCode, int yhPoints, int hours) {
+        this.courseCode = courseCode;
+        this.yhPoints = yhPoints;
+        this.hours = hours;
+
     }
 
     @Override
