@@ -11,7 +11,7 @@ import java.util.List;
 public class CourseAndStudentConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(CourseAndStudentRepository repository) {
+    CommandLineRunner commandLineRunner4(CourseAndStudentRepository repository) {
         return args -> {
             CoursAndStudent jonte = new CoursAndStudent(1,1);
 
