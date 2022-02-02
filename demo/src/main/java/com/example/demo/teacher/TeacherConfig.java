@@ -8,8 +8,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
-import static java.time.Month.FEBRUARY;
-import static java.time.Month.MARCH;
+import static java.time.Month.*;
 
 @Configuration
 public class TeacherConfig {
@@ -20,16 +19,25 @@ public class TeacherConfig {
             Teacher mikael = new Teacher(
                     "Mikael",
                     "Wallin",
-                    LocalDate.of(1965, FEBRUARY, 12)
+                    LocalDate.of(1965, FEBRUARY, 12),
+                    1000.0
             );
             Teacher stefan = new Teacher(
                     "Stefan",
                     "Holmberg",
-                    LocalDate.of(1970, MARCH, 19)
+                    LocalDate.of(1970, MARCH, 19),
+                    500.0
+            );
+
+            Teacher kisslo = new Teacher(
+                    "Kisslo",
+                    "Shek",
+                    LocalDate.of(1979, APRIL, 27),
+                    200.0
             );
 
             repository.saveAll(
-                    List.of(mikael, stefan)
+                    List.of(mikael, stefan, kisslo)
             );
 
         };

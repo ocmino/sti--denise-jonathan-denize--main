@@ -25,6 +25,7 @@ public class Teacher {
     private String firstName;
     private String lastName;
     private LocalDate dob;
+    private double salaryPerHour;
     @Transient
     private Integer age;
 
@@ -35,20 +36,23 @@ public class Teacher {
                    String firstName,
                    String lastName,
                    LocalDate dob,
-                   Integer age) {
+                   Integer age,
+                   double salaryPerHour) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
         this.age = age;
+        this.salaryPerHour = salaryPerHour;
     }
 
     public Teacher(String firstName,
                    String lastName,
-                   LocalDate dob) {
+                   LocalDate dob, double salaryPerHour) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
+        this.salaryPerHour = salaryPerHour;
     }
 
     @Override
@@ -59,6 +63,7 @@ public class Teacher {
                 ", lastName='" + lastName + '\'' +
                 ", dob=" + dob +
                 ", age=" + age +
+                ", salary per hour= " + salaryPerHour +
                 '}';
     }
 }

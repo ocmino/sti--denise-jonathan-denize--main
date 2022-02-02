@@ -23,7 +23,7 @@ public class CoursAndStudent {
     )
     private int courseCode;
     private int studentId;
-    private int teacherId;
+    private Long teacherId;
 
 
     public CoursAndStudent() {
@@ -35,10 +35,12 @@ public class CoursAndStudent {
         this.studentId = studentId;
     }
 
-   /* public CoursAndStudent(int courseCode, int teacherId) {
+   public CoursAndStudent(int courseCode, Long teacherId) {
         this.courseCode = courseCode;
         this.teacherId = teacherId;
-    }*/
+    }
+
+
     @Override
     public String toString() {
         return

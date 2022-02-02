@@ -13,13 +13,13 @@ public class CourseConfig {
     CommandLineRunner commandLineRunner3(CourseRepository repository){
         return args -> {
             Course databashantering = new Course(25,
-                    55
+                    200
             );
             Course javaprogrammering = new Course(20,
-                    45
+                    160
             );
             Course html = new Course(20,
-                    45
+                    160
             );
 
             repository.saveAll(
