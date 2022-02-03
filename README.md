@@ -2,8 +2,7 @@
 ProjectJavaB
 
 UML:
-![image](https://user-images.githubusercontent.com/91418720/151554975-af9ecb39-2e68-4dea-ab55-c86ccad32375.png)
-
+![img.png](img.png)
 
 HOW TO RUN THIS APPLICATION:
 1. DOWNLOAD PostgresApp FROM https://postgresapp.com AND FOLLOW THE INSTRUCTIONS FOR DOWNLOADING
