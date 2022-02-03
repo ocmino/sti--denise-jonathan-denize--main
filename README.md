@@ -2,7 +2,7 @@
 ProjectJavaB
 
 UML:
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 HOW TO RUN THIS APPLICATION:
 1. DOWNLOAD PostgresApp FROM https://postgresapp.com AND FOLLOW THE INSTRUCTIONS FOR DOWNLOADING
